@@ -43,7 +43,7 @@ function ws_3721up_api_init(){
 		data:{'action':'get','ws_3721up_api_setting':''},
 		success:function(data){
 			if(data['ws_3721up_api_setting']==''){$('#ws_3721up_uploader').
-			html('未检测到API代码    <a href="../../wp-3721up - 拷贝/wp-admin/options-general.php?page=ws_3721up_plugin_id" target="_blank">设置</a>')}
+			html('未检测到API代码    <a href="../wp-admin/options-general.php?page=ws_3721up_plugin_id" target="_blank">设置</a>')}
 			ws_o = JSON.parse(data['ws_3721up_api_setting'])
 			var d = ws_o.globalVarName
 			ws_3721up_init(d,ws_o);
