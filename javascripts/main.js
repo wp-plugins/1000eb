@@ -7,7 +7,7 @@ var ws_3721up_latest_flag = false;
 var ws_3721up_ajax_tip = '';
 var ws_3721up_db_json = {};
 var ws_3721up_tip_api_err ='\u5bf9\u4e0d\u8d77\uff0c\u4e0a\u4f20\u53d8\u91cf\u65e0\u6548\uff0c\u8bf7\u8054\u7cfb\u7ba1\u7406\u5458\u5e76\u6838\u5bf9 API \u4ee3\u7801!';
-var ws_3721up_tip_common = '\u70b9\u51fb\u9009\u62e9\u6587\u4ef6\u5f00\u59cb\u4e0a\u4f20 <span style="font-style:italic">Powered By</span> 3721UP.COM & <a href="http://waisir.com" target="_blank">\u6b6a\u4e16\u754c</a>';	
+var ws_3721up_tip_common = '\u70b9\u51fb\u9009\u62e9\u6587\u4ef6\u5f00\u59cb\u4e0a\u4f20 <span style="font-style:italic">Powered By</span> 1000eb.com & <a href="http://waisir.com" target="_blank">\u6b6a\u4e16\u754c</a>';	
 var ws_3721up_tip_ie = '\u60a8\u6b63\u5728\u4f7f\u7528ie\u6d4f\u89c8\u5668\2c\u8bf7\u70b9\u51fb\u4e0a\u4f20\u6309\u94ae\u7684\u4e0a\u65b9\u8fb9\u7f18\u533a\u57df\u5373\u53ef\u5f39\u51fa\u6587\u4ef6\u9009\u62e9\u5bf9\u8bdd\u6846';
 var ws_3721up_tip_mozilla = '\u60a8\u4f7f\u7528\u7684\u662f\u706b\u72d0\u6d4f\u89c8\u5668';
 //var end
@@ -151,10 +151,10 @@ function ws_3721up_json_to_form(postid){
 	var ws_item =  ws_3721up_db_json[postid];
 	for( var i = ws_item.length -1 ; i>= 0; i--){
 		ws_3721up_addli();
-		var ws_html = '\u6587\u4ef6\u540d\uff1a'+ws_item[i].name+'<br />\u6587\u4ef6\u5927\u5c0f\uff1a'+ws_item[i].size+'KB<br />\u4e0b\u8f7d\u5730\u5740\uff1a<a href="http://3721up.com/'+ws_item[i].code+'" target="_blank">http://3721up.com/'+ws_item[i].code+'</a>';
+		var ws_html = '\u6587\u4ef6\u540d\uff1a'+ws_item[i].name+'<br />\u6587\u4ef6\u5927\u5c0f\uff1a'+ws_item[i].size+'KB<br />\u4e0b\u8f7d\u5730\u5740\uff1a<a href="http://1000eb.com/'+ws_item[i].code+'" target="_blank">http://1000eb.com/'+ws_item[i].code+'</a>';
 		$('#ws_3721up_filelist_ul .ws_3721up_filecode:first').val(ws_item[i].code);
 		$('#ws_3721up_filelist_ul .ws_3721up_filesize:first').val(ws_item[i].size);
-		$('#ws_3721up_filelist_ul .ws_3721up_fileurl:first') .val('http://3721up.com/' + ws_item[i].code);
+		$('#ws_3721up_filelist_ul .ws_3721up_fileurl:first') .val('http://1000eb.com/' + ws_item[i].code);
 		$('#ws_3721up_filelist_ul .ws_3721up_filename:first').val(ws_item[i].name);
 		$('#ws_3721up_filelist_ul .ws_3721up_filehtml:first').val(ws_html);
 	}	
@@ -388,7 +388,7 @@ function register_ws_3721up_file_click(){
 	$('#ws_3721up_file_add').click(function(){
 	
 		var mathrand = Math.floor(Math.random()*8999+1000);
-		var callbackstr = '文件名：'+mathrand+'.gif<br />文件大小：2.72KB<br />下载地址：<a href="http://3721up.com/'+mathrand+'" target="_blank">http://1000eb.com/'+mathrand+'</a>'
+		var callbackstr = '文件名：'+mathrand+'.gif<br />文件大小：2.72KB<br />下载地址：<a href="http://1000eb.com/'+mathrand+'" target="_blank">http://1000eb.com/'+mathrand+'</a>'
 		$('#' + ws_3721up_textar_id).val(callbackstr);
 		
 	
