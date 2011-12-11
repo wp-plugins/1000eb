@@ -21,7 +21,7 @@ $('#ws_3721up_setting_update').bind('click',function(){
 	//if(!ws_3721up_get_info()){return};
 	//alert($('#ws_3721up_textarea_main').val());
 	$.ajax({
-		url:'../wp-content/plugins/wp-3721up/includes/loader.php',
+		url:'../wp-content/plugins/1000eb/includes/loader.php',
 		type:'POST',
 		data:{  'action':'set',
 				'ws_3721up_api_setting':ws_3721up_get_info(),

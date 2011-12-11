@@ -53,7 +53,7 @@ function ws_3721up_api_init(){
 
 function ws_3721up_ajax_setup(){
 	$.ajaxSetup({
-		url:'../wp-content/plugins/wp-3721up/includes/loader.php',
+		url:'../wp-content/plugins/1000eb/includes/loader.php',
 		type:'POST',
 		dataType:'JSON'		
 	});
