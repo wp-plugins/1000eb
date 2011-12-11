@@ -43,7 +43,7 @@ function ws_3721up_api_init(){
 		data:{'action':'get','ws_3721up_api_setting':''},
 		success:function(data){
 			if(data['ws_3721up_api_setting']==''){$('#ws_3721up_uploader').
-			html('未检测到API代码    <a href="../wp-admin/options-general.php?page=ws_3721up_plugin_id" target="_blank">设置</a>')}
+			html('未检测到API代码    <a href="wp-admin/options-general.php?page=ws_3721up_plugin_id" target="_blank">设置</a>')}
 			ws_o = JSON.parse(data['ws_3721up_api_setting'])
 			var d = ws_o.globalVarName
 			ws_3721up_init(d,ws_o);
@@ -226,27 +226,23 @@ function ws_3721up_getlink(){
 		ws_3721up_addli();
 		
 		var callbackstr = $('#' + ws_3721up_textar_id ).val();
+		
 		//var reg =/http:\/\/1000eb.com\/+([\w?=]*)/i;
 		var reg =/http:\/\/1000eb.com\/+([\w\d]*)/i;
 		var reg_name = /\u6587\u4ef6\u540d\uff1a(.*?)</i;
 		var reg_size = /\u6587\u4ef6\u5927\u5c0f\uff1a(.*?)</i;
 		var filecode = callbackstr.match(reg)[1];
+		
 		var filename = callbackstr.match(reg_name)[1];
 		var filesize= callbackstr.match(reg_size)[1];
 		$('#ws_3721up_filelist_ul .ws_3721up_filecode:first').val(filecode);
 		$('#ws_3721up_filelist_ul .ws_3721up_filesize:first').val(filesize);
-		$('#ws_3721up_filelist_ul .ws_3721up_fileurl:first') .val('http://3721up.com/' + filecode);
+		$('#ws_3721up_filelist_ul .ws_3721up_fileurl:first') .val('http://1000eb.com/' + filecode);
 		$('#ws_3721up_filelist_ul .ws_3721up_filename:first').val(filename);
 		$('#ws_3721up_filelist_ul .ws_3721up_filehtml:first').val($('#' + ws_3721up_textar_id ).val());
 		$('#' + ws_3721up_textar_id ).val('');
 		ws_3721up_set_json_ajax();
 		/////////////////////////////////////////////////////////////////////////////////////
-		
-		//var isVisualEditor = $("iframe#content_ifr").contents().find('body').html();
-		//var isHtmlEditor   = $("#editorcontainer textarea").html();
-
-		
-
 
 　　		var isIE=!!document.all,ieRange=false,editor,win,doc;
 　　
@@ -291,6 +287,7 @@ function ws_3721up_getlink(){
 			insert(callbackstr)	;
 			
 		}else if( editor == 'html'){
+	
 			var htmlEditor  = $("#editorcontainer textarea").html();
 			htmlEditor += callbackstr;
 			$("#editorcontainer textarea").html(htmlEditor);
@@ -347,7 +344,7 @@ $('#ws_3721up_ctl_apply').click(function(){
 });
 
 $('#ws_3721up_ctl_manage').click(function(){
-	 window.open('http://3721up.com/user/controlpanel/recylefromoutdoor.aspx');
+	 window.open('http://1000eb.com/user/controlpanel/recylefromoutdoor.aspx');
 });
 
 function register_ws_3721up_file_click(){
@@ -391,7 +388,7 @@ function register_ws_3721up_file_click(){
 	$('#ws_3721up_file_add').click(function(){
 	
 		var mathrand = Math.floor(Math.random()*8999+1000);
-		var callbackstr = '文件名：'+mathrand+'.gif<br />文件大小：2.72KB<br />下载地址：<a href="http://3721up.com/'+mathrand+'" target="_blank">http://3721up.com/'+mathrand+'</a>'
+		var callbackstr = '文件名：'+mathrand+'.gif<br />文件大小：2.72KB<br />下载地址：<a href="http://3721up.com/'+mathrand+'" target="_blank">http://1000eb.com/'+mathrand+'</a>'
 		$('#' + ws_3721up_textar_id).val(callbackstr);
 		
 	

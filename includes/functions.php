@@ -76,14 +76,16 @@ function add_wp_3721up_tinymce_plugin($plugin_array) {
 
 
 function ws_3721up_addQuickTag(){
-	$obj = stripslashes(get_option('ws_3721up_api_setting_ori'));
+	$obj = stripslashes(get_option('ws_3721up_api_setting'));
+	$src = stripslashes(get_option('ws_3721up_api_setting_api_src'));
 	$global_name = get_option('ws_3721up_api_setting_global_name');
-	echo $obj ;
+	
+	echo '<script src="'.$src.'" type="text/javascript"></script>';
 ?>
 
 <script>
 
-
+<?php echo "var com1000ebVar212 = $obj;";?>
 var tinymce_qttoolbar = document.getElementById("ed_toolbar");  
 
 if (tinymce_qttoolbar) {
