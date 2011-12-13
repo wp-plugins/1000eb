@@ -3,7 +3,7 @@
 Plugin Name: 千易网盘(新版)
 Plugin URI: http://www.waisir.com/1000eb
 Description: 此插件可以在新建文章的界面直接上传文件到千易网盘,获取下载页面地址.并保存在POST编辑页面
-Version: 2.0
+Version: 3.3
 Author: 歪SIR
 Author URI: http://www.waisir.com
 */
@@ -11,6 +11,7 @@ Author URI: http://www.waisir.com
 Change logs
 1.2 Fix some jquery problems
 2.0 Update the api gateway, add TinyMCE button in visual editor and quicktag in html view 
+3.3 Compatible with WP V3.3
 
 */
 
@@ -25,8 +26,8 @@ include_once('includes/functions.php');
 
  
 // init process for button control
-add_action('admin_footer', 'wp_3721up_addbuttons');
-add_action('admin_footer','ws_3721up_addQuickTag');
+add_action('admin_init', 'wp_3721up_addbuttons');
+add_action('admin_print_footer_scripts','ws_3721up_addQuickTag', 99999);
 
 /////////////////////////////////////////////////////////////////////////////////////
 

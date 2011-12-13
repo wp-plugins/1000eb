@@ -3,12 +3,13 @@ Contributors: waisir
 Donate link: http://www.waisir.com/
 Tags: 千易,qianyi,1000eb,3721,3721up,disk,upload,file,post,网盘
 Requires at least: 2.7.0
-Tested up to: 3.2.1
-Stable tag: 2.0
+Tested up to: 3.3
+Stable tag: 3.3
 
 This Plugin can build a section in post page so that you can upload to 1000EB net-disk and save the links conveniently.
 == Description ==
 **New features**
+*已经兼容至最新版WP*
 最新版地址为:http://wordpress.org/extend/plugins/1000eb/ 或者 http://wordpress.org/extend/plugins/wp-3721up/ , 这两个插件是一模一样的.推荐使用1000EB. 插件的更换和更新不会造成数据丢失,请随意更新.
 在文件编辑器中添加了上传按钮, 在可视化编辑器中和HTML代码编辑器中都可以上传文件,并且上传文件完毕后直接将链接添加到编辑器中.
 
