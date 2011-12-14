@@ -287,10 +287,15 @@ function ws_3721up_getlink(){
 			insert(callbackstr)	;
 			
 		}else if( editor == 'html'){
-	
-			var htmlEditor  = $("#editorcontainer textarea").html();
-			htmlEditor += callbackstr;
-			$("#editorcontainer textarea").html(htmlEditor);
+			//#editorcontainer
+			var htmlEditor = $("#content");
+
+			if( htmlEditor.length !== 0 ){
+				var htmlEditorHtml  = htmlEditor.html();
+				htmlEditorHtml += '\n' + callbackstr;
+				htmlEditor.html( htmlEditorHtml);
+			}
+
 		}
 			
 		/////////////////////////////////////////////////////////////////////////////////////
