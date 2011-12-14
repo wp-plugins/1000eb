@@ -87,7 +87,7 @@ function ws_3721up_addQuickTag(){
 
 <script>
 
-<?php echo "var com1000ebVar212 = $obj;";?>
+<?php echo "var $global_name = $obj;";?>
 
 $(function(){
 	

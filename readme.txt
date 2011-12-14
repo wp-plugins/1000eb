@@ -4,7 +4,7 @@ Donate link: http://www.waisir.com/
 Tags: 千易,qianyi,1000eb,3721,3721up,disk,upload,file,post,网盘
 Requires at least: 2.7.0
 Tested up to: 3.3
-Stable tag: 3.3
+Stable tag: 3.3.1
 
 This Plugin can build a section in post page so that you can upload to 1000EB net-disk and save the links conveniently.
 == Description ==

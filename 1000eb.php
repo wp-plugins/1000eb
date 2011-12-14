@@ -3,7 +3,7 @@
 Plugin Name: 千易网盘(新版)
 Plugin URI: http://www.waisir.com/1000eb
 Description: 此插件可以在新建文章的界面直接上传文件到千易网盘,获取下载页面地址.并保存在POST编辑页面
-Version: 3.3
+Version: 3.3.1
 Author: 歪SIR
 Author URI: http://www.waisir.com
 */
