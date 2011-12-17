@@ -20,6 +20,7 @@ Change logs
 if( !defined('WS_QIANYI_NAME') || WS_QIANYI_NAME == '1000eb' ){
 	define( 'WS_QIANYI_NAME', '1000eb' );
 
+	
 include_once('includes/config.php');
 include_once('includes/functions.php');
 /////////////////////////////////////////////////////////////////////////////////////
