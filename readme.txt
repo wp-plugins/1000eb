@@ -1,35 +1,36 @@
 === Plugin Name ===
 Contributors: waisir 
-Donate link: http://www.waisir.com/
+Donate link: http://www.waisir.com/donate
 Tags: 千易,qianyi,1000eb,3721,3721up,disk,upload,file,post,网盘
 Requires at least: 2.7.0
 Tested up to: 3.3
 Stable tag: 3.3.1
 
-This Plugin can build a section in post page so that you can upload to 1000EB net-disk and save the links conveniently.
+该插件可以快速的上传文件到网盘中并返回文件的链接到编辑器中以及储存文件链接等.
+
 == Description ==
-**New features**
-*已经兼容至最新版WP*
-最新版地址为:http://wordpress.org/extend/plugins/1000eb/ 或者 http://wordpress.org/extend/plugins/wp-3721up/ , 这两个插件是一模一样的.推荐使用1000EB. 插件的更换和更新不会造成数据丢失,请随意更新.
-在文件编辑器中添加了上传按钮, 在可视化编辑器中和HTML代码编辑器中都可以上传文件,并且上传文件完毕后直接将链接添加到编辑器中.
 
-**Before to use this plugin**
+= 相关网站 = 
+* [歪世界](http://www.waisir.com/ "作者主页")
+* [插件主页](http://www.waisir.com/1000eb "插件主页")
+* [千易官网主页](http://1000eb.net/ "千易官网主页")
+* [千易API开发者页面](http://1000eb.com/ "千易API开发者页面")
 
-there should a permission for you to use this plugin's api.
+= 新版本特性 = 
+* 在可视化编辑器中新增快速上传按钮
+* 在HTML代码编辑器中新增快速上传按钮
 
-you can goto register an account on page <a href="http://1000eb.net/Reg.aspx" target="_blank">http://1000eb.net/Reg.aspx</a>
+= 新版本修复 = 
+* 对3721UP更新为千易对API的更改做了相应更改
 
-then add you domain to the authority list.
 
--(在使用该插件之前,你需要去千易的官方网站注册一个账号,并添加你的网站域名到允许列表中.3721up会给你一个随即txt文件让你上传到你的网站根目录以验证你是网站的所有者.)
+= 重要提示 =
 
-**PHP version should be 5.2.0+**
+* There should be a permission for you to use this plugin's api.
+You can goto register an account on page <a href="http://1000eb.net/Reg.aspx" target="_blank">http://1000eb.net/Reg.aspx</a>
+Then add you domain to the authority list.
 
--(PHP版本需要在5.20以上)
-
-**Now you can use it**
-
--(现在你可以正常使用这个插件了)
+* (在使用该插件之前,你需要去千易的官方网站注册一个账号,并添加你的网站域名到允许列表中.3721up会给你一个随即txt文件让你上传到你的网站根目录以验证你是网站的所有者.)
 
 == Installation ==
 
@@ -55,15 +56,14 @@ then add you domain to the authority list.
 
 == Frequently Asked Questions ==
 
-= 当我点击上传时出现这个错误:Error: 120 Can not directly access. power by 3721up.com? =
+= 当我点击上传时出现这个错误:API变量无效 =
 
-出现这个问题的原因是你没有添加你的网站域名到3721up的允许列表中.你应该这个样做:
-
-首先你要注册一个3721up的账号,然后在3721up网站上添加你的网站域名即可.
+出现这个问题的原因是你未设置API信息或者API信息已经过期.
+解决方法是:到千易官方网站获取最新的API粘贴到插件设置面板相应位置.
 
 = 怎么注册千易账号? =
 
-该页面即注册页面<a href="http://1000eb.net/Reg.aspx"  target="_blankhttp://1000eb.net/Reg.aspx</a>
+* 该页面即注册页面<a href="http://1000eb.net/Reg.aspx"  target="_blankhttp://1000eb.net/Reg.aspx</a>
 
 = 已经有千易的账号了,怎么添加允许域名? =
 
@@ -83,27 +83,25 @@ then add you domain to the authority list.
 == Screenshots ==
 
 1. Visual Editor
+screenshot-1.png
 
 2. Html Editor
+screenshot-2.png
 
 3. POST PAGE
+screenshot-3.png
 
 == Changelog ==
 
-= 1.1 =
-= 1.2 =
-fix some jquery problems
+= Version 3.3.1 (2011-12-14) = 
 
-* just A simple api ,no more in this version,but i'll improve it recently!
+= Version 3.3 (2011-12-13) = 
 
-201109271520
+= Version 2.0 (2011-12-11) =
 
-201109271826
+= Version 1.0 (2011-09-27) =
 
-201110041519
-
-201112112028
 
 == Upgrade Notice ==
-update please, fine more!
+千易网盘WP插件最新版3.3.1发布啦!
 
