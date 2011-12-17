@@ -6,7 +6,7 @@ Requires at least: 2.7.0
 Tested up to: 3.3
 Stable tag: 3.3.1
 
-该插件可以快速的上传文件到网盘中并返回文件的链接到编辑器中以及储存文件链接等.
+该插件可以快速的上传文件到网盘中并返回文件的链接到编辑器中以及储存文件链接等
 
 == Description ==
 
@@ -36,23 +36,23 @@ Then add you domain to the authority list.
 
 1. Download and install it.
 
--(下载此插件并安装到wordpress中.)
+(下载此插件并安装到wordpress中.)
 
 2. Register an account form the page (<a href="http://1000eb.net/Reg.aspx"  target="_blank">http://1000eb.net/Reg.aspx</a>) for the permission the 3721up for you.
 
--(到此页面注册一个账号才能有使用该插件API的权限.)
+(到此页面注册一个账号才能有使用该插件API的权限.)
 
 3. login on this page http://1000eb.net/ and add your domain to the authority list
 
--(到 <a href="http://1000eb.net/" target="_blank">http://1000eb.net/</a> 登录并添加你的网站域名到允许列表中.)
+(到 <a href="http://1000eb.net/" target="_blank">http://1000eb.net/</a> 登录并添加你的网站域名到允许列表中.)
 
 4. paste the code in the 3721up plugin setting page
 
--(到3721up后台设置面板中添加你的API代码)
+(到3721up后台设置面板中添加你的API代码)
 
 5. Now you can use this plugin!
 
--(到此你能正常使用这个插件了.)
+(到此你能正常使用这个插件了.)
 
 == Frequently Asked Questions ==
 
@@ -63,7 +63,7 @@ Then add you domain to the authority list.
 
 = 怎么注册千易账号? =
 
-* 该页面即注册页面<a href="http://1000eb.net/Reg.aspx"  target="_blankhttp://1000eb.net/Reg.aspx</a>
+* 该页面即注册页面<a href="http://1000eb.net/Reg.aspx"  target="_blank">http://1000eb.net/Reg.aspx</a>
 
 = 已经有千易的账号了,怎么添加允许域名? =
 
